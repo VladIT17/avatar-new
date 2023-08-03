@@ -1,0 +1,650 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+h1,
+h3,
+h2,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.content-container {
+    width: 1032px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url('./img/header-baground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 39px 49px 39px 204px;
+    border-bottom: 3px solid #FFFFFF;
+
+}
+
+.logo-header {
+    margin-right: 168px;
+    width: 186px;
+    height: 72px;
+}
+
+.header-list {
+    margin-right: 212px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 24px;
+    width: 325px;
+}
+
+.list-item {
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+
+}
+
+.list-item:hover {
+    font-weight: 600;
+    font-size: 20px;
+    color: #94CFFF;
+}
+
+.header-btn {
+    margin-right: 49px;
+    display: block;
+    width: 141px;
+    height: 42px;
+    background: #0B0E66;
+    border: 2px solid #26C7EA;
+    border-radius: 35px 0px;
+    font-family: 'HeadlandOne';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0.8;
+    color: #26C6EA;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 345px;
+    height: 45px;
+}
+
+.eng {
+    text-transform: uppercase;
+    font-family: 'Hammersmith One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #FFFFFF;
+}
+
+.switcher {
+
+    width: 36px;
+    height: 20px;
+}
+
+
+
+/* MAIN */
+.main-section {
+    background-image: url('./img/hero-baground.jpg');
+    width: 1440px;
+    color: white;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-thing {
+    width: 376px;
+    padding-top: 179px;
+    padding-bottom: 179px;
+}
+
+.main-text:not(:nth-child(1)) {
+    margin-bottom: 42px;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.main-thing-btn {
+    display: block;
+    font-family: 'HeadlandOne';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    width: 260px;
+    height: 80px;
+    color: #26C7EA;
+    background: #0B0E66;
+    border: 3px solid #26C7EA;
+    border-radius: 45px 0px;
+}
+
+.hero-right {
+    width: 50px;
+    height: 141px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    align-items: flex-end;
+}
+
+.content-video {
+    width: 900px;
+    padding: 40px 98px 60px 98px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.video-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: transparent;
+    border: none;
+}
+
+.video-svg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: none;
+    fill: #0B0E66;
+}
+
+.video-title {
+    color: #1F2426;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.social-item {
+    margin-bottom: 24px;
+}
+
+
+.backdrop {
+    width: 1360px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.6s;
+}
+
+.modal-form {
+
+    background-image: url('./img/baground-modal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    padding: 111px 80px 23px;
+    position: fixed;
+    z-index: 100;
+}
+
+.close-btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 16px;
+    right: 16px;
+}
+
+.close-svg {
+    fill: #0B0E66;
+}
+
+
+.modal-list {
+    margin-bottom: 40px;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    color: #0B0E66;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-input {
+    margin-bottom: 12px;
+    outline: none;
+    width: 440px;
+    height: 40px;
+    border: 2px solid #0B0E66;
+    background: #F2EAEA;
+}
+
+.join-btn {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 80px;
+    border-radius: 45px 0px;
+    border: 3px solid #26C7EA;
+    background: #0B0E66;
+    color: #26C7EA;
+    text-align: center;
+    font-family: 'HeadlandOne';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* info modal */
+
+
+
+.info-modal {
+    position: fixed;
+    width: 600px;
+    padding: 58px 112px 172px;
+    background-image: url('./img/info-baground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.info-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'HeadlandOne', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 102px;
+}
+
+.info-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'HeadlandOne', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.close-svg-info {
+    fill: #FFF;
+}
+
+/* end */
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.quotes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 16px;
+    padding-top: 75px;
+}
+
+.quote {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #0A3853;
+}
+
+.quote-name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/trailer.png');
+    height: 741px;
+}
+
+.trailer-btn {
+    background: #0B0E66;
+    border: 3px solid #26C7EA;
+    border-radius: 45px 0px;
+    width: 260px;
+    height: 80px;
+    font-family: 'HeadlandOne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #26C7EA;
+}
+
+
+.section {
+
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('./img/cards-bgi.jpg');
+    text-align: center;
+}
+
+.card {
+    width: 320px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.lang {
+    font-family: 'HeadlandOne';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #141414;
+}
+
+.language {
+    padding-top: 58px;
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #141414;
+}
+
+.cards {
+    width: 1032px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card-top {
+    width: 320px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+}
+
+.card-btm {
+    width: 320px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 57px;
+}
+
+
+
+.card-ua {
+    font-family: 'HeadlandOne';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #141414;
+}
+
+.card-navi {
+    font-family: 'HeadlandOne';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.ua-card {
+    margin: 36px 120px 40px 120px;
+}
+
+.stril-card {
+    margin: 0 84px 40px 84px;
+}
+
+.navi-card {
+    margin: 0 123px 36px 123px;
+}
+
+.ua-card-two {
+    margin: 36px 91px 40px 90px;
+}
+
+.middle-img {
+    margin: 0px 84px 40px 84px;
+}
+
+.navi-card-two {
+    margin: 0 29px 36px 28px;
+}
+
+
+.ua-card-three {
+    margin: 45px 100px 31px 99px;
+
+}
+
+.img-three {
+    margin: 0 86px 40px 82px;
+}
+
+.navi-card-three {
+    margin: 0 109px 36px 104px;
+}
+
+.ua-card-four {
+    margin: 36px 123px 40px 122px;
+
+}
+
+.img-four {
+    margin: 0px 85px 40px 83px;
+}
+
+.navi-card-four {
+    margin: 0 112px 36px 112px;
+}
+
+.ua-card-five {
+    margin: 45px 90px 31px 89px;
+
+}
+
+.img-five {
+    margin: 0 84px 40px 84px;
+}
+
+.navi-card-five {
+    margin: 0 55px 36px 55px;
+}
+
+.ua-card-six {
+    margin: 42px 62px 34px 62px;
+
+}
+
+.img-six {
+    margin: 0 84px 40px 84px;
+}
+
+.navi-card-six {
+    margin: 0 99px 36px 98px;
+}
+
+/* footer */
+
+.footer {
+    background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)), url('./img/header-baground.png');
+    background-size: cover;
+    width: 1440px;
+    padding-top: 35px;
+    color: #FFFFFF;
+}
+
+.footer-container {
+    display: flex;
+
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    padding: 76px 0 76px 0;
+}
+
+
+.line {
+    width: 153px;
+    border: 2px solid #FFFFFF;
+    transform: rotate(90deg);
+
+}
+
+.footer-right {
+    width: 689px;
+
+}
+
+
+
+.footer-list-item {
+    padding-top: 80px;
+    margin-bottom: 16px;
+
+}
+
+.footer-list-item-two {
+    margin-bottom: 37px;
+}
+
+.footer-span {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.first-border {
+    display: inline-block;
+    width: 269px;
+    border: 2px dashed #FFFFFF;
+}
+
+.first-border-two {
+    display: inline-block;
+    width: 194px;
+    border: 2px dashed #FFFFFF;
+}
+
+.footer-email {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.bottom-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.bottom-text {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.img-strila {
+    margin-left: 53px;
+}
